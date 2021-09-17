@@ -78,20 +78,42 @@ body > .sec {
     display: grid;
     place-items: center;
     direction: rtl;
-    
+    font-family: 'Tajawal', sans-serif;
+}
+body > .sec , body > .sec  *{
+    overflow: hidden;
 }
 body > .sec > .lyrics {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 body > .sec > .lyrics > .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;align-items: center;
+    gap: 20px;
+    width: 70vw;
 }
 body > .sec > .lyrics > .row > .col {
     display: flex;
     flex-direction: row;
+    justify-content: center;align-items: center;
+}
+body > .sec > .lyrics > .row > .col > .word {
+    justify-content: center;align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    transition: all .5s ease-in-out;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+body > .sec > .lyrics > .row > .col > .word.active{
+    background: #000;
+    color: #04ff00;
+    transform: scale(1.1);
 }
 
 
