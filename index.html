@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon1.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script defer src="main.js"></script>
+    <script defer src="flag-lyrics.js"></script>
 
 
     <!-- fonts  -- Tajwal and ElMessiri -->
@@ -18,12 +18,100 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Tajawal:wght@200;300;400;500;700&display=swap" rel="stylesheet">
     <!-- end fonts -->
+
+    <!-- The Icons --starts -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <!-- --ends -->
+
+    <!-- animate.style --starts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- animate.style --ends -->
+
+    
     <title>91 - اليوم الوطني</title>
 </head>
 <body>
-    <div class="container">
-        <h1>91</h1>
-        <h2>عاماً من العزه والرخاء</h2>
+    <div class="container first min-h-and-w-full">
+        <div class="container wow fade-in-bck">
+            <span style="display: block;">
+                <h1 style="
+                    font-size: 10rem;
+                    color: black; 
+                    transition: all .2s ease-in; 
+                    "
+                    class="wow animate__animated animate__fadeInDown">91</h1>
+                    <h2 style="
+                    font-size: 2rem;
+                    transition: all .4s ease-in; 
+
+                " class="wow animate__animated animate__fadeInUp">عاماً من العزه والرخاء</h2>
+            </span>
+        </div>
     </div>
+    <div class="container sec min-h-and-w-full">
+        <div class="container lyrics">
+            <div class="row">
+                <div class="col">
+                    <div class="word" time="time" >سَارِعِي 	</div>
+                    <div class="word" time="time" >لِلْمَجْدِ </div>
+                    <div class="word" time="time" >وَالْعَلْيَاء</div>
+                </div>
+                <div class="col">
+                    <div class="word" time="time" >مَجِّدِي </div>
+                    <div class="word" time="time" >لِخَالِقِ</div>
+                    <div class="word" time="time" > السَّمَاء</div>                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="word" time="time" >وَارْفَعِ </div>
+                    <div class="word" time="time" >الخَفَّاقَ </div>
+                    <div class="word" time="time" >أَخْضَرْ </div>
+                </div>
+                <div class="col">
+                    <div class="word" time="time" >يَحْمِلُ</div>
+                    <div class="word" time="time" >النُّورَ</div>
+                    <div class="word" time="time" >الْمُسَطَّرْ</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="word" time="time" >رَدّدِي</div>
+                    <div class="word" time="time" >اللهُ</div>
+                    <div class="word" time="time" >أكْبَر</div>
+                </div>
+                <div class="col">
+                    <div class="word" time="time" >يَا</div>
+                    <div class="word" time="time" >مَوْطِنِي</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div>مَوْطِنِي</div>
+                    <div class="word" time="time" >عِشْتَ</div>
+                    <div class="word" time="time" >فَخْرَ</div>
+                    <div class="word" time="time" >الْمُسلِمِين</div>
+                </div>
+                <div class="col">
+                    <div>عَاشَ</div>
+                    <div class="word" time="time" >الْمَلِكْ</div>
+                    <div class="word" time="time" >لِلْعَلَمْ </div>                    
+                    <div class="word" time="time" ></div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- scripts -->
+    <!-- wow.js --starts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- wow.js --ends -->
+    <script >
+        new WOW().init()
+    </script>
 </body>
 </html>
