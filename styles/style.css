@@ -117,7 +117,7 @@ body > .sec > .lyrics > .row > .col {
     justify-content: center;align-items: center;
     color: white;
     transition: all .3s ease-in-out;
-    margin: 10px 0;
+    margin: 7px 0;
 
 }
 body > .sec > .lyrics > .row > .col.active:not(body > .sec > .lyrics > .row > .col.g.active, body > .sec > .lyrics > .row > .col.h.active) {
