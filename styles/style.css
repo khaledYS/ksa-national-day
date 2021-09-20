@@ -36,10 +36,11 @@ body > .container {
 body > .first{
     display: grid; place-items: center;
     overflow: initial;
+    height: 100%;
 }
 body > .first > .container{
     transition: all .3s ease-in-out;
-    height: 90vh; width: 90vw;
+    height: 90%; width: 90vw;
     display: grid; place-items: center;
     font-family: 'El Messiri', sans-serif;
     background: #adadad;
@@ -132,7 +133,7 @@ body > .sec > .lyrics > .row > .col.active {
 }
 body > .sec > .lyrics > .row > .col > .word {
     justify-content: center;align-items: center;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: inherit;
     transition: all .5s ease-in-out;
@@ -179,7 +180,7 @@ body > .sec > .controlers {
 body > .sec > .controlers > div{
     margin: 0 20px;
 }
-body > .sec > .controlers > div::after,::before{
+body > .sec > .controlers > div::after{
     padding: 14px;
     background: #e0e0e0;
     border-radius: 5px;
@@ -190,6 +191,7 @@ body > .sec > .controlers > div::after,::before{
     margin: 0 auto;
     box-shadow: 3px 2px 9px 0px black, inset 2px 2px 20px 0px white;
     transition: all .25s ease-out;
+    font-size: 3rem;
 }
 body > .sec > .controlers > div.play-stop::after {
     content: "\f04b";
@@ -234,64 +236,29 @@ body > .sec .col.c::after{
 
 
 
+/* some resobonsive */
+@media all and (max-width:450px) {
+    body > .sec > .lyrics > .row > .col > .word {
+        font-size: 1.5rem;
+    }
+}
+@media all and (min-width:451px) and (max-width: 700px  ) {
+    body > .sec > .lyrics > .row > .col > .word {
+        font-size: 2rem;
+    }
+    body > .sec > .controlers > div::after{
+        font-size: 2rem;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+@media all and (min-width:701px) and (max-width: 900px  ) {
+    body > .sec > .lyrics > .row > .col > .word {
+        font-size:1.8rem;
+    }
+    body > .sec > .controlers > div::after{
+        font-size: 3rem;
+    }
+}
 
 
 
@@ -312,7 +279,7 @@ body > .sec .col.c::after{
 
 /* class styles */
 .min-h-and-w-full{
-    min-height: 100vh;
+    min-height: 100%;
     min-width: 100%;
 }
 

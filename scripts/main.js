@@ -5,3 +5,11 @@ const firstContainer = document.querySelector('body > .container.first > .contai
 firstContainer.onclick = ()=>{
     firstContainer.classList.toggle('active')
 }
+
+
+
+const changeVeiwSize = ()=>{
+    document.body.style.height = window.innerHeight + "px"
+}
+changeVeiwSize()
+window.onresize = changeVeiwSize
