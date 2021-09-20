@@ -31,6 +31,7 @@ body{
 }
 body > .container {
     scroll-snap-align: start;
+    border-bottom: 10px solid #131313;
 }
 /* first section */
 body > .first{
