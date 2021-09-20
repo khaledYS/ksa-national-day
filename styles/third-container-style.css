@@ -19,12 +19,12 @@ body > .third > .kings-imgs{
     overflow-y: initial;
 }
 body > .third > .kings-imgs > .king-img{
-    min-width: fit-content;
+    min-width: max-content;
     scroll-snap-align: center;
     margin: 0 7vw;
     object-fit: contain;
-    min-height: 70%;
-    max-height: 70%;
+    min-height: 75%;
+    max-height: 75%;
     border-radius: 10px;
     border: 10px solid #2d251b;
     box-shadow: 0 0 20px 9px #1f1f1f;
@@ -47,7 +47,7 @@ body > .third > .kings-abouts > .king-about{
     opacity: 0;
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 100vw;
     left: 0;
     height: 100%;
     overflow: auto;
@@ -64,7 +64,25 @@ body > .third > .kings-abouts > .king-about{
     padding-bottom: 20px;
     padding-top: 20px;
 }
-body > .third > .kings-abouts > .king-about > h1{
+body > .third > .kings-abouts > .king-about > .head{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body > .third > .kings-abouts > .king-about > .container{
+    overflow: auto;
+    height: 70%;
+    padding: 20px 0;
+    width: 100%;
+
+    /* firefox scroll bar */
+    scrollbar-color: #fafafa #313131; /* thumb and track color */
+    scrollbar-width: thin;
+}
+body > .third > .kings-abouts > .king-about  h1{
     font-family: 'Reem Kufi', sans-serif;
     color: white;
 }
@@ -111,3 +129,20 @@ body > .third > .kings-imgs::-webkit-scrollbar{
     }
 
 }
+
+/* some custome scroll bars */
+body > .third > .kings-abouts > .king-about > .container::-webkit-scrollbar, body > .third > .kings-abouts > .king-about > .container::-moz-scrollbar {
+    width: 20px;
+  }
+  
+body > .third > .kings-abouts > .king-about > .container::-webkit-scrollbar-track, body > .third > .kings-abouts > .king-about > .container::-moz-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+  }
+  
+body > .third > .kings-abouts > .king-about > .container::-webkit-scrollbar-thumb, body > .third > .kings-abouts > .king-about > .container::-moz-scrollbar-thumb {
+    border-radius: 100px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+    background-color: #313131;
+  }
