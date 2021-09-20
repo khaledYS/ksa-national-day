@@ -1,0 +1,22 @@
+body > .container.fourth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body > .container.fourth > h1{
+    color: #62cc78;
+    display: block;
+    font-size: 4rem;
+    font-family: 'El Messiri', sans-serif;
+}
+body > .container.fourth > h1 > span{
+    font-size: 5rem;
+    color: black;
+}
+body > .container.fourth > h1 small{
+    font-size: 2rem;
+    display: block;
+    margin-right: auto;
+    color: #1b1b1b;
+}
