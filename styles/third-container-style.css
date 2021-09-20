@@ -56,9 +56,9 @@ body > .third > .kings-abouts > .king-about{
     transform: translateY(100px);
     transition: .4s all ease, opacity .3s ease-out;
     color: #b7b7b7;
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-align: center;
-    padding: 0 50px;
+    padding: 0 20px;
     font-family: 'Tajawal', sans-serif;
     z-index: -10;
     padding-bottom: 20px;
