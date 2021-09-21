@@ -20,3 +20,19 @@ body > .container.fourth > h1 small{
     margin-right: auto;
     color: #1b1b1b;
 }
+@media all and (max-width:450px) {
+    body > .container.fourth > h1{
+        font-size: 2rem;
+    }
+}
+@media all and (max-width: 700px  ) {
+    body > .container.fourth > h1{
+        font-size: 2.4rem;
+    }
+}
+@media all and (max-width: 900px  ) {
+    body > .container.fourth > h1 > span{
+        display: none;
+    }
+
+}

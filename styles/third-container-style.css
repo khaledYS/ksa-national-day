@@ -26,7 +26,7 @@ body > .third > .kings-imgs > .king-img{
     min-height: 75%;
     max-height: 75%;
     border-radius: 10px;
-    border: 10px solid #2d251b;
+    border: 7px solid #7b6449;
     box-shadow: 0 0 20px 9px #1f1f1f;
     cursor: pointer;
     opacity: .8;
@@ -58,7 +58,6 @@ body > .third > .kings-abouts > .king-about{
     color: #b7b7b7;
     font-size: 1.7rem;
     text-align: center;
-    padding: 0 20px;
     font-family: 'Tajawal', sans-serif;
     z-index: -10;
     padding-bottom: 20px;
@@ -81,6 +80,7 @@ body > .third > .kings-abouts > .king-about > .container{
     /* firefox scroll bar */
     scrollbar-color: #fafafa #313131; /* thumb and track color */
     scrollbar-width: thin;
+
 }
 body > .third > .kings-abouts > .king-about  h1{
     font-family: 'Reem Kufi', sans-serif;
@@ -106,7 +106,7 @@ body > .third > .kings-imgs::-webkit-scrollbar{
 
 
 @media all and (max-width : 450px) {
-    body > .third > .kings-abouts > .king-about{
+    body > .third > .kings-abouts > .king-about > .container{
         padding-left: 10px;
         padding-right: 10px;
         font-size: 1.2rem;
@@ -114,33 +114,33 @@ body > .third > .kings-imgs::-webkit-scrollbar{
 
 }
 @media all and (max-width : 700px) and (min-width: 451px) {
-    body > .third > .kings-abouts > .king-about{
+    body > .third > .kings-abouts > .king-about > .container{
         padding-left: 14px;
-        padding-right: 14px;
+        padding-right: 20px;
         font-size: 1.4rem;
     }
 
 }
 @media all and (max-width : 900px) and (min-width: 701px) {
-    body > .third > .kings-abouts > .king-about{
+    body > .third > .kings-abouts > .king-about > .container{
         padding-left: 14px;
-        padding-right: 14px;
+        padding-right: 24px;
         font-size: 1.6rem;
     }
 
 }
 
 /* some custome scroll bars */
-body > .third > .kings-abouts > .king-about > .container::-webkit-scrollbar, body > .third > .kings-abouts > .king-about > .container::-moz-scrollbar {
+body > .third > .kings-abouts > .king-about > .container::-webkit-scrollbar{
     width: 20px;
   }
   
-body > .third > .kings-abouts > .king-about > .container::-webkit-scrollbar-track, body > .third > .kings-abouts > .king-about > .container::-moz-scrollbar-track {
+body > .third > .kings-abouts > .king-about > .container::-webkit-scrollbar-track {
     background-color: #e4e4e4;
     border-radius: 100px;
   }
   
-body > .third > .kings-abouts > .king-about > .container::-webkit-scrollbar-thumb, body > .third > .kings-abouts > .king-about > .container::-moz-scrollbar-thumb {
+body > .third > .kings-abouts > .king-about > .container::-webkit-scrollbar-thumb {
     border-radius: 100px;
     border: 5px solid transparent;
     background-clip: content-box;

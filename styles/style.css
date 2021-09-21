@@ -31,6 +31,8 @@ body{
 }
 body > .container {
     scroll-snap-align: start;
+}
+body > .container:not(.third){
     border-bottom: 10px solid #131313;
 }
 /* first section */
@@ -243,7 +245,7 @@ body > .sec .col.c::after{
         font-size: 1.5rem;
     }
 }
-@media all and (min-width:451px) and (max-width: 700px  ) {
+@media all and (max-width: 700px  ) {
     body > .sec > .lyrics > .row > .col > .word {
         font-size: 2rem;
     }
@@ -252,7 +254,7 @@ body > .sec .col.c::after{
     }
 
 }
-@media all and (min-width:701px) and (max-width: 900px  ) {
+@media all and (max-width: 900px  ) {
     body > .sec > .lyrics > .row > .col > .word {
         font-size:1.8rem;
     }
