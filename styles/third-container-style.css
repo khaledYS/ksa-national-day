@@ -85,6 +85,7 @@ body > .third > .kings-abouts > .king-about > .container{
 body > .third > .kings-abouts > .king-about  h1{
     font-family: 'Reem Kufi', sans-serif;
     color: white;
+    font-size: 1.5rem;
 }
 body > .third > .kings-abouts > .king-about.active {
     opacity: 1;

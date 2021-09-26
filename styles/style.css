@@ -33,7 +33,7 @@ body > .container {
     scroll-snap-align: start;
 }
 body > .container:not(.third){
-    border-bottom: 10px solid #131313;
+    border-bottom: 4px solid #131313;
 }
 /* first section */
 body > .first{
