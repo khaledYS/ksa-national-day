@@ -7,21 +7,17 @@ body > .third{
     height: 100%;
 }
 body > .third > .kings-imgs{
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
     display: flex;
-    scroll-snap-type: x mandatory;
-    padding: 0 50vw;
     height: 40%;
     max-height: 40%;
     min-height: 40%;
     align-items: center;
-    overflow-y: initial;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 body > .third > .kings-imgs > .king-img{
     min-width: max-content;
-    scroll-snap-align: center;
-    margin: 0 7vw;
     object-fit: contain;
     min-height: 75%;
     max-height: 75%;
@@ -31,17 +27,59 @@ body > .third > .kings-imgs > .king-img{
     cursor: pointer;
     opacity: .8;
     transition: all .2s ease-out;
+    transform: translate(-50%,-50%) scale(.8);
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+/* for the left side of kings */    
+
+body > .third > .kings-imgs > .king-img.left{
+    left: -150%;
+    transform: none;
+}
+body > .third > .kings-imgs > .king-img.right{
+    transform: none;
+    left: 150%;
 }
 body > .third > .kings-imgs > .king-img.active{
-    transform: scale(1.2);
+    transform: scale(1) translate(-50%,-50%);
     opacity: 1;
+    left: 50%;
+    top: 50%;
+}
+/* kings carousel triggers */
+body > .third > .kings-imgs > .triggers {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+body > .third > .kings-imgs > .triggers > div::before{
+    font-size: 3rem;
+    color: white;
+    background: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .4s ease-in;
+}
+body > .third > .kings-imgs > .triggers > div:hover::before{
+    color: #379737;
+}
+body > .third > .kings-imgs > .triggers > .right::before{
+    content: "\f0a9";
+}
+body > .third > .kings-imgs > .triggers > .left::before{
+    content: "\f0a8";
 }
 body > .third > .kings-abouts {
     height: 60%;
-    position: relative;
     width: 100vw;
     overflow: hidden;
-
+    position: relative;
 }
 body > .third > .kings-abouts > .king-about{
     opacity: 0;
@@ -74,8 +112,9 @@ body > .third > .kings-abouts > .king-about > .head{
 body > .third > .kings-abouts > .king-about > .container{
     overflow: auto;
     height: 70%;
-    padding: 20px 0;
+    padding: 20px 20px;
     width: 100%;
+
 
     /* firefox scroll bar */
     scrollbar-color: #fafafa #313131; /* thumb and track color */
@@ -100,9 +139,6 @@ body > .third > .kings-abouts > .king-about ~ h1{
     font-family: 'El Messiri', sans-serif;
 }
 
-body > .third > .kings-imgs::-webkit-scrollbar{
-    display: none;
-}
 
 
 
@@ -146,4 +182,4 @@ body > .third > .kings-abouts > .king-about > .container::-webkit-scrollbar-thum
     border: 5px solid transparent;
     background-clip: content-box;
     background-color: #313131;
-  }
+}
