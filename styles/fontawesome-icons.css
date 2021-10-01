@@ -1,0 +1,24 @@
+body > .sec > .controlers > div.play-stop::after {
+    content: "\f04b";
+} 
+body > .sec > .controlers > div.repeat::after {
+    content: "\f2f9";
+    border-radius: 200px;
+    padding: 15px;
+}
+body > .sec > .controlers > div.play-stop.playing::after{
+    content: "\f04c";
+}
+
+
+
+body > .third > .kings-imgs > .triggers > .right::before{
+    content: "\f0a9";
+}
+body > .third > .kings-imgs > .triggers > .left::before{
+    content: "\f0a8";
+}
+
+
+
+

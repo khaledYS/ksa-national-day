@@ -69,12 +69,7 @@ body > .third > .kings-imgs > .triggers > div::before{
 body > .third > .kings-imgs > .triggers > div:hover::before{
     color: #5bcd5b;
 }
-body > .third > .kings-imgs > .triggers > .right::before{
-    content: "\f0a9";
-}
-body > .third > .kings-imgs > .triggers > .left::before{
-    content: "\f0a8";
-}
+
 body > .third > .kings-abouts {
     height: 60%;
     width: 100vw;
