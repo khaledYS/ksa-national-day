@@ -26,29 +26,27 @@ body > .third > .kings-imgs > .king-img{
     box-shadow: 0 0 20px 9px #1f1f1f;
     cursor: pointer;
     opacity: .8;
-    transition: all .5s ease-out;
+    transition: all .4s ease-in-out;
     transform: translate(-50%,-50%) scale(.8);
     position: absolute;
     left: 0;
     top: 50%;
+    object-fit: cover;
 }
 /* for the left side of kings */    
 
 body > .third > .kings-imgs > .king-img.left{
     left: -150%;
-    transform: none;
-    top: 0%;
+    top: 50%;
 }
 body > .third > .kings-imgs > .king-img.right{
-    transform: none;
     left: 150%;
-    top: 0%;
+    top: 50%;
 }
 body > .third > .kings-imgs > .king-img.active{
     transform: scale(1) translate(-50%,-50%);
     opacity: 1;
-    left: 50%;
-    top: 50%;
+    left: 50%; top: 50%;
 }
 /* kings carousel triggers */
 body > .third > .kings-imgs > .triggers {
