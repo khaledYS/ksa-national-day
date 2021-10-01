@@ -1,42 +1,22 @@
-const kingsImgs = document.querySelectorAll('body > .container.third > .kings-imgs > .king-img ')
 const kingsAbouts = document.querySelectorAll('body > .container.third > .kings-abouts > .king-about')
-
-kingsImgs.forEach((kingImg, kingImgIndex)=>{
-    kingImg.onclick = ()=>{
-        if(!kingImg.classList.contains('active')){
-
-            // clear any divs kings that has class active
-            kingsAbouts.forEach(kingAbout=>kingAbout.classList.remove('active'))
-            kingsImgs.forEach(kingImg=>kingImg.classList.remove('active'))
-
-            // add the class active to the targeted king img and about
-            kingImg.classList.add('active')
-            document.querySelector(`body > .container.third > .kings-abouts > .king${kingImgIndex}-about`).classList.add('active')
-
-            // scroll to the img when cilcking on it if it weren't on the enough view
-            kingImg.scrollIntoView() 
-        }else if (kingImg.classList.contains('active')){
-            kingsAbouts.forEach(kingAbout=>kingAbout.classList.remove('active'))
-            kingsImgs.forEach(kingImg=>kingImg.classList.remove('active'))
-        }
-    }
-})
+const kingsAboutCon = document.querySelector('body > .container.third > .kings-abouts ')
 
 
- const cas = document.querySelector('.contaner.third > .kings-img')
- const clas = "active";
- const casTriggers = cas.querySelectorAll('.contaner.third > .triggers > i')
+const clas = "active";
+ const cas = document.querySelector('.container.third > .kings-imgs')
+ const casTriggers = cas.querySelectorAll('.triggers > div')
  const casItems = cas.querySelectorAll('.king-img')
  
  
  // we do all our shit after the dom initalized 
  document.addEventListener("DOMContentLoaded",()=>{
 
+    // After Btn
      casTriggers[1].onclick = ()=>{
  
          const middle = cas.querySelector(`.${clas}`)
-         const afterMiddle = cas.querySelectorAll(`.${clas} ~ div.item`)
-         const beforeMiddle = cas.querySelectorAll('.item:not(.middle, .right)')
+         const afterMiddle = cas.querySelectorAll(`.king-img.${clas} ~ .king-img`)
+         const beforeMiddle = cas.querySelectorAll(`.king-img:not(.${clas}, .right)`)
  
          // explaining would be down man
          console_log_statusOfCases(beforeMiddle, afterMiddle, middle)
@@ -45,11 +25,12 @@ kingsImgs.forEach((kingImg, kingImgIndex)=>{
              setCasItem(beforeMiddle, middle, afterMiddle, "left", afterMiddle[0])
      }
 
+    //  before btn
      casTriggers[0].onclick = ()=>{
  
          const middle = cas.querySelector(`.${clas}`)
-         const afterMiddle = cas.querySelectorAll(`.${clas} ~ div.item`)
-         const beforeMiddle = cas.querySelectorAll('.item:not(.middle, .right)')
+         const afterMiddle = cas.querySelectorAll(`.king-img.${clas} ~ .king-img`)
+         const beforeMiddle = cas.querySelectorAll(`.king-img:not(.${clas}, .right)`)
  
          console_log_statusOfCases(beforeMiddle, afterMiddle, middle)
 
@@ -72,12 +53,14 @@ kingsImgs.forEach((kingImg, kingImgIndex)=>{
          afterMiddle.forEach(el=>el.classList.add('right'))
  
          // this will delete all the classes that got assinged to the targeted cas and give a class of middle
-         deleteClasses(targetedToBeMiddle).classList.add("middle")
+         deleteClasses(targetedToBeMiddle).classList.add(clas)
+         kingsAbouts.forEach(e=>e.classList.remove('active'))
+         kingsAboutCon.querySelector(`.${targetedToBeMiddle.getAttribute('data-to')}`).classList.add('active')
      }
  
  
      const deleteClasses = (el)=>{
-         el.classList.remove('middle')
+         el.classList.remove(clas)
          el.classList.remove('right')
          el.classList.remove('left')
          return el

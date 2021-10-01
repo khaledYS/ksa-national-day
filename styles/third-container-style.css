@@ -26,7 +26,7 @@ body > .third > .kings-imgs > .king-img{
     box-shadow: 0 0 20px 9px #1f1f1f;
     cursor: pointer;
     opacity: .8;
-    transition: all .2s ease-out;
+    transition: all .5s ease-out;
     transform: translate(-50%,-50%) scale(.8);
     position: absolute;
     left: 0;
@@ -37,10 +37,12 @@ body > .third > .kings-imgs > .king-img{
 body > .third > .kings-imgs > .king-img.left{
     left: -150%;
     transform: none;
+    top: 0%;
 }
 body > .third > .kings-imgs > .king-img.right{
     transform: none;
     left: 150%;
+    top: 0%;
 }
 body > .third > .kings-imgs > .king-img.active{
     transform: scale(1) translate(-50%,-50%);
@@ -56,7 +58,7 @@ body > .third > .kings-imgs > .triggers {
     transform: translateY(-50%);
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 body > .third > .kings-imgs > .triggers > div::before{
     font-size: 3rem;
@@ -64,10 +66,10 @@ body > .third > .kings-imgs > .triggers > div::before{
     background: #000;
     border-radius: 50%;
     cursor: pointer;
-    transition: all .4s ease-in;
+    transition: all .15s ease-in !important;
 }
 body > .third > .kings-imgs > .triggers > div:hover::before{
-    color: #379737;
+    color: #5bcd5b;
 }
 body > .third > .kings-imgs > .triggers > .right::before{
     content: "\f0a9";
@@ -148,6 +150,7 @@ body > .third > .kings-abouts > .king-about ~ h1{
         padding-right: 10px;
         font-size: 1.2rem;
     }
+    body > .third > .kings-imgs > .triggers {  justify-content: space-between; padding: 0 8px; }
 
 }
 @media all and (max-width : 700px) and (min-width: 451px) {
@@ -156,6 +159,7 @@ body > .third > .kings-abouts > .king-about ~ h1{
         padding-right: 20px;
         font-size: 1.4rem;
     }
+    body > .third > .kings-imgs > .triggers {  justify-content: space-between; padding: 0 30px;  }
 
 }
 @media all and (max-width : 900px) and (min-width: 701px) {
@@ -164,6 +168,7 @@ body > .third > .kings-abouts > .king-about ~ h1{
         padding-right: 24px;
         font-size: 1.6rem;
     }
+    body > .third > .kings-imgs > .triggers {  justify-content: space-around;  }
 
 }
 

@@ -149,6 +149,9 @@ body > .sec  .col{
     position: relative;
   }
   
+  body > .sec  .col.active.stop-animation::after{
+    animation-play-state: paused;
+  }
   body > .sec  .col::after{
     content: '';
     position: absolute;
@@ -160,15 +163,16 @@ body > .sec  .col{
     background-color: #ffffff;
     transform-origin: bottom right;
     opacity: 0;
-    transition: transform .6s ease-out, opacit .01s ease-out;
   }
   
   body > .sec .col.active::after {
+    animation: col-underLine 6s linear;
     transform: scaleX(1);
     transform-origin: top right;
     opacity: 1;
-    transition-timing-function: linear;
   }
+
+
 
 
 /* The audio controlers */
@@ -216,23 +220,23 @@ body > .sec > .controlers > div.play-stop.playing::after{
 
 /* the next lines contains durations for the after element */
 body > .sec .col.a::after{
-    transition-duration: 5s !important;
+    animation-duration: 5s !important;
 }
 body > .sec .col.b::after{
-    transition-duration: 4s !important;
+    animation-duration: 4s !important;
 }   
 body > .sec .col.c::after{
-    transition-duration: 3s !important;
+    animation-duration: 3s !important;
 }body > .sec .col.d::after{
-    transition-duration: 2s !important;
+    animation-duration: 2s !important;
 }body > .sec .col.e::after{
-    transition-duration: 2s !important;
+    animation-duration: 2s !important;
 }body > .sec .col.f::after{
-    transition-duration: 2s !important;
+    animation-duration: 2s !important;
 }body > .sec .col.g::after{
-    transition-duration: 5s !important;
+    animation-duration: 5s !important;
 }body > .sec .col.h::after{
-    transition-duration: 4s !important;
+    animation-duration: 4s !important;
 }
 
 
@@ -324,6 +328,15 @@ body.loading > .loading{
   /* end coping */
 /* loading -ends */
 
+
+/* col under line animation  */
+@keyframes col-underLine {
+  0%{
+    transform: scaleX(0);
+    transform-origin: top right;
+    opacity: 0;
+  }
+}
 
 
 

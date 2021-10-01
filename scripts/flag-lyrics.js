@@ -23,12 +23,19 @@ cols.forEach(col => {
 // the controlers
 // the play button
 controlers[0].onclick = ()=>{
+    let activeCol = document.querySelector('body > .sec > .lyrics .col.active')
+    console.log(activeCol)
+
     if(!aud.paused){
         controlers[0].classList.remove('playing')
         aud.pause()
+        !activeCol.classList.contains('stop-animation') && 
+        activeCol.classList.add('stop-animation')
     }else{
         controlers[0].classList.add('playing')
         aud.play()
+        activeCol.classList.remove('stop-animation')
+        console.log("did",activeCol)
     }
 }
 
