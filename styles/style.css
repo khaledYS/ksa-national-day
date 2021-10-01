@@ -32,7 +32,7 @@ body{
 body > .container {
     scroll-snap-align: start;
 }
-body > .container:not(.third){
+body > .container:not(.third, .footer){
     border-bottom: 4px solid #131313;
 }
 /* first section */
@@ -363,6 +363,79 @@ body.loading > .loading{
         font-size: 3rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer -starts */
+.container.footer {
+  padding: 10px;
+  text-align: left;
+  font-size: 1.4rem;
+  border: 0px;
+  color: white;
+}
+.container.footer > span > span{
+  color: red;
+}
+.container.footer > span > a{
+  font-weight:900 ;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ma-appearance: none;
+  text-decoration: underline;
+  text-decoration-color: #222;
+  color: white;
+
+}
+/* footer -ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
