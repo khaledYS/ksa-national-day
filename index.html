@@ -278,11 +278,11 @@
 
     <script defer>
         /* contorling loading page */
-        document.addEventListener('DOMContentLoaded', ()=>{
+        window.onload =  ()=>{
             console.log(document.body.classList.value)
             document.body.classList.remove('loading')
             console.log('Finish loading ..')
-        }, false)
+        }
     </script>
 </body>
 </html>
