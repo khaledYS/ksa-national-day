@@ -240,7 +240,7 @@ body > .sec .col.c::after{
   0%{
     transform: scaleX(0);
     transform-origin: top right;
-    opacity: 0;
+    opacity: 1;
   }
 }
 
