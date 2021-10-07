@@ -1,0 +1,120 @@
+
+
+/* footer -starts */
+.container.footer {
+    padding: 10px;
+    text-align: left;
+    font-size: 1.4rem;
+    border: 0px;
+    color: white;
+    font-family: 'Tajawal', sans-serif;
+  }
+  .container.footer > span::before{
+    content: "|";
+    margin:  0 10px;
+    color:#75f573;
+    font-size: 150%;
+    font-weight: 900;
+  }
+  .container.footer > span > span{
+    color: red;
+  }
+  .container.footer > span > a{
+    font-weight:900 ;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ma-appearance: none;
+    text-decoration: underline;
+    text-decoration-color: #222;
+    color: white;
+    
+  }
+  .container.footer > .social-media i{
+    font-style: normal;
+    font-size: 1.8rem;
+    color: #1d1d1d;
+  }
+  .container.footer > .social-media{
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+  }
+  .container.footer > .social-media  a{
+    font-weight: 600;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ma-appearance: none;
+    text-decoration: none; 
+    color: #141414;  
+    display: flex;
+    align-items: center;
+  }
+  
+  /* twitter navigator */
+  .container.footer > .social-media > .twitter{ margin-top: 5px;}
+  .container.footer > .social-media > .twitter::before{
+    content: "|";
+    margin-left: 30px;
+    margin-right: 10px;
+    color: #1d9bf0;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .container.footer > .social-media > .twitter:hover i{color: #1d9bf0;}
+  
+  /* github navigator */
+  .container.footer > .social-media > .github{ margin-top: 5px;}
+  .container.footer > .social-media > .github::before{
+    content: "|";
+    margin-left: 30px;
+    margin-right: 10px;
+    color: #0d1117;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .container.footer > .social-media > .github:hover i{color: #000000;}
+  
+  /* youtube navigator */
+  .container.footer > .social-media > .youtube{ margin-top: 5px;}
+  .container.footer > .social-media > .youtube::before{
+    content: "|";
+    margin-left: 30px;
+    margin-right: 10px;
+    color: #ff0000;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .container.footer > .social-media > .youtube:hover i{color: #ff0000;}
+  
+  /* instagram navigator */
+  .container.footer > .social-media > .instagram{ margin-top: 5px;}
+  .container.footer > .social-media > .instagram::before{
+    content: "|";
+    margin-left: 30px;
+    margin-right: 10px;
+    color: #f09433;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .container.footer > .social-media > .instagram:hover i{color: #ff0000;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  
+  }
+  
+  .container.footer > .copyright{
+    font-family: 'Reem Kufi';
+    color: #6c6c6c;
+    font-size: 1rem;
+  }
+  
+  /* footer -ends */
+  
+  

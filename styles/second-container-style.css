@@ -1,0 +1,178 @@
+
+
+/* second sec */
+body > .sec {
+    display: grid;
+    place-items: center;
+    direction: rtl;
+    font-family: 'Tajawal', sans-serif;
+    position: relative;
+}
+body > .sec , body > .sec  *{
+    overflow: initial;
+}
+body > .sec > .lyrics {
+    display: flex;
+    flex-direction: column;
+}
+body > .sec > .lyrics > .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;align-items: center;
+    width: 70vw;
+}
+body > .sec > .lyrics > .row > .col {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;align-items: center;
+    color: white;
+    transition: all .3s ease-in-out;
+    margin: 7px 0;
+
+}
+body > .sec > .lyrics > .row > .col.active:not(body > .sec > .lyrics > .row > .col.g.active, body > .sec > .lyrics > .row > .col.h.active) {
+    transform: scale(1.1);
+}
+body > .sec > .lyrics > .row > .col.active {
+    background: #000;
+    color: #75f573;
+    transform: scale(1);
+    border-radius: 7px;
+    box-shadow: 4px 4px 20px 0px #000000;
+}
+body > .sec > .lyrics > .row > .col > .word {
+    justify-content: center;align-items: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: inherit;
+    transition: all .5s ease-in-out;
+    padding: 5px 7px;
+    border-radius: 5px;
+}
+
+body > .sec  .col{
+    display: inline-block;
+    position: relative;
+  }
+  
+  body > .sec  .col.active.stop-animation::after{
+    animation-play-state: paused;
+  }
+  body > .sec  .col::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    opacity: 0;
+  }
+  
+  body > .sec .col.active::after {
+    animation: col-underLine 6s linear;
+    transform: scaleX(1);
+    transform-origin: top right;
+    opacity: 1;
+  }
+
+
+
+
+/* The audio controlers */
+
+
+body > .sec > .controlers {
+    font-family: "Font Awesome\ 5 Free";
+    bottom: 3%;
+    right: 3%;
+    display: flex;
+}
+body > .sec > .controlers > div{
+    margin: 0 20px;
+}
+body > .sec > .controlers > div::after{
+    padding: 14px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.7rem;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    box-shadow: 3px 2px 9px 0px black, inset 2px 2px 20px 0px white;
+    transition: all .25s ease-out;
+    font-size: 3rem;
+}
+
+body > .sec > .controlers > div:hover::after{
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+/* the next lines contains durations for the after element */
+body > .sec .col.a::after{
+    animation-duration: 5s !important;
+}
+body > .sec .col.b::after{
+    animation-duration: 4s !important;
+}   
+body > .sec .col.c::after{
+    animation-duration: 3s !important;
+}body > .sec .col.d::after{
+    animation-duration: 2s !important;
+}body > .sec .col.e::after{
+    animation-duration: 2s !important;
+}body > .sec .col.f::after{
+    animation-duration: 2s !important;
+}body > .sec .col.g::after{
+    animation-duration: 5s !important;
+}body > .sec .col.h::after{
+    animation-duration: 4s !important;
+}
+
+
+
+
+
+
+
+/* col under line animation  */
+@keyframes col-underLine {
+  0%{
+    transform: scaleX(0);
+    transform-origin: top right;
+    opacity: 1;
+  }
+}
+
+
+
+/* some resobonsive */
+@media all and (max-width:450px) {
+    body > .sec > .lyrics > .row > .col > .word {
+        font-size: 1.5rem;
+    }
+}
+@media all and (max-width: 700px  ) {
+    body > .sec > .lyrics > .row > .col > .word {
+        font-size: 2rem;
+    }
+    body > .sec > .controlers > div::after{
+        font-size: 2rem;
+    }
+
+}
+@media all and (max-width: 900px  ) {
+    body > .sec > .lyrics > .row > .col > .word {
+        font-size:1.8rem;
+    }
+    body > .sec > .controlers > div::after{
+        font-size: 3rem;
+    }
+}
