@@ -8,6 +8,13 @@ firstContainer.onclick = ()=>{
 
 
 
+
+
+
+/**
+ * This shunk of code to give the body a height by px instead using vh 
+ * bcz vh isn't supported alot in iphone and some sort of phones
+ */
 const changeVeiwSize = ()=>{
     document.body.style.height = window.innerHeight + "px"
 }

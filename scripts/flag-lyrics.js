@@ -58,3 +58,11 @@ aud.ontimeupdate = ()=>{
         find.col.classList.add('active')
     }   
 }
+
+
+
+
+/**
+ * Not gonna say a lot in this but I already made a explained project like this
+ * try To visit https://github.com/khaledYS/klash-songLyrics-The-writer-in-the-art-of-disciplineoliting
+ */

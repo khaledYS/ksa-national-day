@@ -73,3 +73,12 @@ const clas = "active";
          console.log("middle : ", middle)
      }
  })
+
+
+
+
+ 
+/**
+ * Not gonna say a lot in this but I already made a explained project like this
+ * try To visit https://github.com/khaledYS/carousel-thatIsMore-dynamic-
+ */
