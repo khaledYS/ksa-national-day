@@ -4,35 +4,51 @@ body > .container.fourth {
     align-items: center;
     flex-direction: column;
 }
-body > .container.fourth > h1{
-    color: #62cc78;
-    display: block;
-    font-size: 4rem;
+body > .container.fourth > div {
+    width: 100%;
     font-family: 'El Messiri', sans-serif;
 }
-body > .container.fourth > h1 > span{
-    font-size: 5rem;
-    color: black;
+body > .container.fourth > div > h1{
+    color: #62cc78;
+    display: block;
+    font-size: 3rem;
 }
-body > .container.fourth > h1 small{
+body > .container.fourth > div > span{
+    font-size: 5rem;
+    color: white;
+    display: block;
+    padding: 0 50px;
+    width: fit-content;
+}
+body > .container.fourth > div > span.start{
+    margin-left: auto;
+    transform: translateY(50%);
+}
+body > .container.fourth > div > span.end{
+    transform: translateY(-20%);
+    margin-right: auto;
+}
+body > .container.fourth > div small{
     font-size: 2rem;
     display: block;
-    margin-right: auto;
-    color: #1b1b1b;
+    text-align: center;
+    color: white;
+    width: 100%;
 }
 @media all and (max-width:450px) {
-    body > .container.fourth > h1{
-        font-size: 2rem;
+    body > .container.fourth > div > h1{
+        font-size: 2rem ;
     }
 }
 @media all and (max-width: 700px  ) {
-    body > .container.fourth > h1{
-        font-size: 2.4rem;
+    body > .container.fourth > div > h1{
+        font-size: 2.4rem ;
     }
 }
 @media all and (max-width: 900px  ) {
-    body > .container.fourth > h1 > span{
-        display: none;
+    body > .container.fourth > div > span{
+        font-size: 5rem;
+        padding: 5px;
     }
 
 }
