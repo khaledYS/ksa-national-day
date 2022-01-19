@@ -38,7 +38,7 @@
   .container.footer > .social-media{
     display: flex;
     flex-direction: column;
-    font-style: normal;
+    font-style: normal; 
   }
   .container.footer > .social-media  a{
     font-weight: 600;
