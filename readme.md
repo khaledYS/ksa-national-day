@@ -1,4 +1,4 @@
-# *[ Demo ](https://khaledys.github.io/ksa-national-day/dist)*.
+# *[ Demo ](https://boring-aryabhata-764e07.netlify.app/)*.
 <br>
 <br>
 <br>
