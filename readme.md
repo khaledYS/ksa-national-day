@@ -1,4 +1,4 @@
-# *[ Demo ](https://khaledys.github.io/ksa-national-day/)*.
+# *[ Demo ](https://khaledys.github.io/ksa-national-day/dist)*.
 <br>
 <br>
 <br>
@@ -21,4 +21,10 @@
 
 --- 
 
+---
+# If you want to build 
+If you want to build this project or bundle it via vitejs,
+then remember that the flag-song.mp3 file isn't bundled and you should do it manually by copeing the file and past it in the assets and change the refrence url to be /assets/name-of-file and the same thing for the favicon
+
+---
 # Thanks for visiting 
