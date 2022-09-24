@@ -1,0 +1,183 @@
+/* reem kufi - font-family: 'Reem Kufi', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600&display=swap');
+
+
+body > .third{
+    overflow-x: hidden;
+    height: 100%;
+}
+body > .third > .kings-imgs{
+    display: flex;
+    height: 40%;
+    max-height: 40%;
+    min-height: 40%;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+body > .third > .kings-imgs > .king-img{
+    min-width: max-content;
+    object-fit: contain;
+    min-height: 75%;
+    max-height: 75%;
+    border-radius: 10px;
+    border: 7px solid #7b6449;
+    box-shadow: 0 0 20px 9px #1f1f1f;
+    cursor: pointer;
+    opacity: .8;
+    transition: all .4s ease-in-out;
+    transform: translate(-50%,-50%) scale(.8);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    object-fit: cover;
+}
+/* for the left side of kings */    
+
+body > .third > .kings-imgs > .king-img.left{
+    left: -150%;
+    top: 50%;
+}
+body > .third > .kings-imgs > .king-img.right{
+    left: 150%;
+    top: 50%;
+}
+body > .third > .kings-imgs > .king-img.active{
+    transform: scale(1) translate(-50%,-50%);
+    opacity: 1;
+    left: 50%; top: 50%;
+}
+/* kings carousel triggers */
+body > .third > .kings-imgs > .triggers {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+body > .third > .kings-imgs > .triggers > div::before{
+    font-size: 3rem;
+    color: white;
+    background: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .15s ease-in !important;
+}
+body > .third > .kings-imgs > .triggers > div:hover::before{
+    color: #5bcd5b;
+}
+
+body > .third > .kings-abouts {
+    height: 60%;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+body > .third > .kings-abouts > .king-about{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    left: 0;
+    height: 100%;
+    overflow: auto;
+    overflow-x: auto;
+    background: rgb(44 44 44);
+    transform: translateY(100px);
+    transition: .4s all ease, opacity .3s ease-out;
+    color: #b7b7b7;
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: 'Tajawal', sans-serif;
+    z-index: -10;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+body > .third > .kings-abouts > .king-about > .head{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body > .third > .kings-abouts > .king-about > .container{
+    overflow: auto;
+    height: 70%;
+    padding: 20px 20px;
+    width: 100%;
+
+
+    /* firefox scroll bar */
+    scrollbar-color: #fafafa #313131; /* thumb and track color */
+    scrollbar-width: thin;
+
+}
+body > .third > .kings-abouts > .king-about  h1{
+    font-family: 'Reem Kufi', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+}
+body > .third > .kings-abouts > .king-about.active {
+    opacity: 1;
+    transform: translateY(0px);
+    z-index: 10;
+}
+body > .third > .kings-abouts > .king-about.active ~ h1{
+    opacity: 0;
+}
+body > .third > .kings-abouts > .king-about ~ h1{
+    font-size: 2rem;
+    font-family: 'El Messiri', sans-serif;
+}
+
+
+
+
+@media all and (max-width : 450px) {
+    body > .third > .kings-abouts > .king-about > .container{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 1.2rem;
+    }
+    body > .third > .kings-imgs > .triggers {  justify-content: space-between; padding: 0 8px; }
+
+}
+@media all and (max-width : 700px) and (min-width: 451px) {
+    body > .third > .kings-abouts > .king-about > .container{
+        padding-left: 14px;
+        padding-right: 20px;
+        font-size: 1.4rem;
+    }
+    body > .third > .kings-imgs > .triggers {  justify-content: space-between; padding: 0 30px;  }
+
+}
+@media all and (max-width : 900px) and (min-width: 701px) {
+    body > .third > .kings-abouts > .king-about > .container{
+        padding-left: 14px;
+        padding-right: 24px;
+        font-size: 1.6rem;
+    }
+    body > .third > .kings-imgs > .triggers {  justify-content: space-around;  }
+
+}
+
+/* some custome scroll bars */
+body > .third > .kings-abouts > .king-about > .container::-webkit-scrollbar{
+    width: 20px;
+  }
+  
+body > .third > .kings-abouts > .king-about > .container::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+  }
+  
+body > .third > .kings-abouts > .king-about > .container::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+    background-color: #313131;
+}
